@@ -1,0 +1,3 @@
+covariate,treatment_mean,control_mean,smd,balanced
+emi_amount,13193.3,13255.4,-0.02,yes
+total_outstanding,10190.1,9894.0,0.029,yes

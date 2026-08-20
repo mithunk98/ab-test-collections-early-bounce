@@ -1,0 +1,7 @@
+cohens_d,interpretation,n_per_arm,n_total,months_to_accrue
+0.2,small,394,788,8.4
+0.25,small,253,506,5.4
+0.3,small-medium,176,352,3.7
+0.35,small-medium,130,260,2.8
+0.4,small-medium,100,200,2.1
+0.5,medium,64,128,1.4

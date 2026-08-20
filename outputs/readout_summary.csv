@@ -1,0 +1,3 @@
+label,n,p,diff,d,significant,guardrail_breach
+"Month 1 only (n=94, as-is cohort)",94,0.08589467960541836,0.10915510757203195,0.35813531663278836,False,False
+Accrued to pre-registered n=260 (~2.8 months),260,0.0512878234711074,0.07539751610479128,0.24304371630152183,False,False

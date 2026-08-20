@@ -1,0 +1,7 @@
+months,n_total,n_per_arm,min_detectable_lift,feasible_for_business_case
+1,94,47,+28.0pp,no
+2,188,94,+20.2pp,no
+3,282,141,+16.6pp,no
+6,564,282,+11.8pp,no
+9,846,423,+9.6pp,no
+12,1128,564,+8.3pp,no
