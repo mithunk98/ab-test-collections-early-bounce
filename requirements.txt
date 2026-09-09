@@ -3,3 +3,4 @@ numpy
 scipy
 statsmodels
 openpyxl
+matplotlib>=3.8

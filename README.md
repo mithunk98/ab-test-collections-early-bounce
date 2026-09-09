@@ -14,6 +14,28 @@ This project designs the experiment that would answer that, and builds the analy
 
 ---
 
+## Why the metric had to change
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="outputs/power_curve_dark.png">
+  <img alt="Two panels sharing a log y-axis of accrual months. Left: the binary cure-flag design needs 23.1 months and 2,176 accounts to detect the +6pp business-case effect, far above the six-month feasibility ceiling. Right: the continuous recovery-ratio design reaches 80% power at d=0.35 in 2.8 months and 260 accounts, comfortably below it." src="outputs/power_curve_light.png">
+</picture>
+
+Detecting the +6pp lift the business case rests on would take **23.1 months** on a binary
+cure flag — long enough that portfolio and policy drift would overtake the test and break
+the comparability the whole design depends on. The same intervention measured as a
+continuous recovery ratio reaches the same power in **2.8 months** on 260 accounts.
+
+The two panels do not share an x-axis, and cannot: a percentage-point lift on a cure rate
+and a Cohen's *d* on a continuous ratio are different units. They share the y-axis, which
+is the quantity the decision actually turned on.
+
+*Regenerate with `python src/plot_power.py`. Plotted values in `outputs/power_curve.csv`;
+the script re-derives every number from `config.py` and fails loudly if the figure and this
+write-up ever disagree.*
+
+---
+
 ## Design summary
 
 | | |

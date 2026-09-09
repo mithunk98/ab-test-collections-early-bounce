@@ -1,0 +1,19 @@
+# Pinned so CI and a developer's machine cannot disagree as ruff's defaults drift.
+# Ruff enables a broad rule set out of the box and that set changes between
+# releases; selecting explicitly is what makes the CI result reproducible.
+
+target-version = "py310"
+line-length = 100
+
+[lint]
+# Correctness rules only. Deliberately conservative: this repo's value is in the
+# experimental design, and a linter that argues about style would only add noise
+# to diffs on a pre-registered analysis pipeline.
+select = ["E", "F", "W"]
+
+[lint.per-file-ignores]
+# Pre-existing dead code in the pre-registered analysis script. Both are harmless
+# (an unused local and an unused tuple element) and neither affects any result,
+# but they sit in code that was registered before randomisation, so they are
+# recorded here rather than silently edited. Clear them and delete this block.
+"src/step4_analyze.py" = ["F841"]
